@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags         <a class="navbar-brand" href="#"><I style="color:rgb(17, 17, 17); font-size:22px;font-family:sans-serif">SK100+</I></a>
+-->
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Bootstrap Website</title>
+  <script>
+    function jokar(){
+    var Password=document.getElementById("k").value;
+    var Email=document.getElementById("p").value;
+    if(Password.length<=5||Password==NULL)
+    alert("Password must be filled and its length should be greater than five character");
+   else if(Email==NULL||Email.length<=5)
+  alert("Email Id must be filled");
+  }
+  function my(){
+    window.open("index.html");
+  }
+  </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <img class="header__logo-image" loading="eager" fetchpriority="high" width="50" height="20" src="//cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo_small.svg?v=1682421543" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:rgb(81, 90, 83);"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+         
+            <li class="nav-item" >
+                <a class="nav-link"  ><span style="color:rgb(109, 95, 95); font-size:16px;font-family:sans-serif">All collection</span></a>
+              </li>
+            <li class="nav-item" >
+              <a class="nav-link" ><span style="color:rgb(116, 97, 97); font-size:16px;font-family:sans-serif">DailyDeals</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><span style="color:rgb(95, 83, 83); font-size:16px;font-family:sans-serif">Gift with boat</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact.html"><span style="color:rgb(95, 83, 83); font-size:16px;font-family:sans-serif">Contact us</span></a>
+              </li>
+              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span style="color:rgb(95, 83, 83); font-size:16px;font-family:sans-serif">Dropdown</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">For boys</a>
+                <a class="dropdown-item" href="#">For elders<a>
+                    <div class="dropdown-divider"></div>
+    
+                    <a class="dropdown-item" href="#">Colors</a>
+                    <a class="dropdown-item" href="#">Smart-Watches</a>
+              </div>
+            </li>
+    
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="mx-2">
+            <span style="border-radius:45px solid black;">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal" >Login</button></span>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal" ><span style="border-radius:34px solid black;">Signup</span></button>
+          </div>
+            </div>
+    
+          </nav>
+
+
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="loginModalLabel">Login to SK100+..</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="my()">x</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+               Email:<input type="text" id="p">
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      Password:<input type="password" id="k">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="jokar()">Login</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- signupModal -->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="signupModalLabel">Get a SK100+ account.</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="my()">x</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                 
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carausel part-->
+          <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <img src="https://source.unsplash.com/random/1400x700/?watches" class="d-block w-100" alt="...">
+          
+                
+
+
+                <div class="carousel-caption d-none d-md-block">
+                 
+              </a>
+                  <h2 style="font-family: Sofia, sans-serif;">Welcome to SK100+ website!</h2>
+                <p style="font-family: Sofia, sans-serif;">Here,You get all type of watches ,earphones,headphones and bluetooth 
+                so,come to deal with us and enjoy a lot with products</p>
+                  <p>Technology News,Devlopement and Trends !</p>
+                  <button class="bt btn-danger">Technical watches</button>
+                  <button class="bt btn-primary" >Smart Watches</button>
+                  <button class="bt btn-success">Trending Watches</button>
+                </div>
+              </div>
+           
+
+
+          </div>
+         
+        
+
+
+          <div class="container my-4">
+            <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">20% Off!</strong>
+                    <h3 class="mb-0">Smart Watches!!</h3>
+                    <div class="mb-1 text-body-secondary">Nov 14</div>
+                    <p class="card-text mb-auto">Here,you get black smart watches with a huge discount of 20% and alot of gifts.Lets deal with us and enjoy!</p>
+                  
+                      <br>
+                    <button class="bt btn-primary" style="width:97px; border-radius:8px;">Add to cart</button>
+                  </div>
+                  <img src="https://source.unsplash.com/random/200x250/?smartwatch">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">40% Off!</strong>
+                    <h3 class="mb-0">Keyboard Typing</h3>
+                    <div class="mb-1 text-body-secondary">Nov 13</div>
+                    <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+                      content.</p>
+                      <br>
+                      <button class="bt btn-primary" style="width:97px; border-radius:8px;">Add to cart</button>
+                  </div>
+                  <img src="https://source.unsplash.com/random/200x250/?headphone">
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="container my-4">
+            <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-danger"> 25% Off!</strong>
+                    <h3 class="mb-0">Earphone!!!</h3>
+                    <div class="mb-1 text-body-secondary">Nov 12</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                      <br>
+                      <button class="bt btn-primary" style="width:97px; border-radius:8px;">Add to cart</button>
+                  </div>
+                  <img src="https://source.unsplash.com/random/200x250/?earphone">
+                </div>
+              </div>
+    
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-warning">10% Off!</strong>
+                    <h3 class="mb-0"> Headphone!!!</h3>
+                    <div class="mb-1 text-body-secondary">Nov 11</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                      <br>
+                      <button class="bt btn-primary" style="width:97px; border-radius:8px;">Add to cart</button>
+                  </div>
+                  <img src="https://source.unsplash.com/random/200x250/?bluetooth">
+                </div>
+                </div>
+              </div>
+            </div>
+       
+
+<!--Small boxes-->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/random/140x140/?black watch">
+      <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">Black color watch</span></h2>
+          <p>Here,You get black color watches!</p>
+          <br>
+           <p>Rs:3000</p>
+      <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/random/140x140/?machine">
+      <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">Any color watch</span></h2>
+          <p>Here,You get any color watches!</p>
+          <br>
+           <p>Rs:2000</p>
+      <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/random/140x140/?robot">
+      <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">pink color watch</span></h2>
+      <p>Here,You get pink color watches!</p>
+      <br>
+       <p>Rs:3500</p>
+      <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/random/140x140/?white watch">
+      <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">White color watch</span></h2>
+          <p>Here,You get white color watches!</p>
+          <br>
+           <p>Rs:2200</p>
+           <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/random/140x140/?red watch">
+      <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">Red color watch</span></h2>
+      <p>Here,You get red color watches!</p>
+      <br>
+       <p>Rs:2500</p>
+      <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/random/140x140/?headphone">
+      <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">Smart watches</span></h2>
+      <p>Here,You get smart watches!</p>
+      <br>
+       <p>Rs:2500</p>
+      <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+    </div><!-- /.col-lg-4 -->
+  
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="https://source.unsplash.com/random/140x140/?red watch">
+          <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">Blue color watch</span></h2>
+          <p>Here,You get red color watches!</p>
+          <br>
+           <p>Rs:4000</p>
+          <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://source.unsplash.com/random/140x140/?blue watch">
+          <h2 class="fw-normal"><span style="font-family:cursive; color:rgb(11, 104, 211);">Blue color watch</span></h2>
+          <p>Here,You get blue color watches!</p>
+          <br>
+           <p>Rs:2000</p>
+          <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://source.unsplash.com/random/140x140/?robot watch">
+          <h2 class="fw-normal"> <span style="font-family:cursive; color:rgb(11, 104, 211);">Robotics Watches</span></h2>
+          <p>Here,You get Robotics  watches!</p>
+          <br>
+           <p>Rs:5000</p>
+          <p ><a class="btn btn-primary" href="#">Add to cart</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
+      <footer class="container">
+           
+        <p>© 2023–2024 <B>SK100+</B> Inc.. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+        </body>
+</html>
